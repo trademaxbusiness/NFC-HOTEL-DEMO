@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "sections"
+    label: "Website Sections"
+    files:
+      - label: "Things to Do"
+        name: "things_to_do"
+        file: "_data/things_to_do.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+
+      - label: "Food Spots"
+        name: "food_spots"
+        file: "_data/food_spots.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
